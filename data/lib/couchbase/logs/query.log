@@ -1,0 +1,633 @@
+_time=2019-03-13T10:24:53.926+00:00 _level=INFO _msg= Initialization of cbauth succeeded  
+_time=2019-03-13T10:24:53.941+00:00 _level=INFO _msg=New store created with url http://127.0.0.1:8091 
+_time=2019-03-13T10:24:53.941+00:00 _level=INFO _msg=pollEOF: About to start stdin polling 
+_time=2019-03-13T10:24:53.957+00:00 _level=INFO _msg=cbq-engine started loglevel=INFO servicers=16 version=2.0.0-N1QL request-size-cap=67108864 n1ql_feat_cntrl=3 max-concurrency=4 pipeline-cap=512 request-cap=256 pipeline-batch=16 max-index-api=3 timeout=0s datastore=http://127.0.0.1:8091 plus-servicers=64 scan-cap=512 
+_time=2019-03-13T10:24:53.960+00:00 _level=INFO _msg=HttpEndpoint: Listen Address=[::]:8093 
+_time=2019-03-13T10:24:53.961+00:00 _level=INFO _msg= Certificates have been refreshed by ns server  
+_time=2019-03-13T10:24:53.961+00:00 _level=ERROR _msg=No certificate passed. Secure listener not brought up. 
+_time=2019-03-13T10:24:53.966+00:00 _level=INFO _msg=New settings received: {"query.settings.curl_whitelist":{"all_access":false,"allowed_urls":[],"disallowed_urls":[]},"query.settings.tmp_space_dir":"/opt/couchbase/var/lib/couchbase/tmp","query.settings.tmp_space_size":5120}
+ 
+_time=2019-03-13T10:24:53.971+00:00 _level=INFO _msg=Settings notifier from metakv
+ 
+_time=2019-03-13T10:24:53.971+00:00 _level=INFO _msg=New Value for curl whitelist <ud>map[disallowed_urls:[] all_access:false allowed_urls:[]]</ud> 
+2019-03-13T10:24:53.985+00:00 [Info] GSIC - Setting config map[query_tmpspace_limit:5120 query_tmpspace_dir:/opt/couchbase/var/lib/couchbase/tmp]
+_time=2019-03-13T10:24:53.985+00:00 _level=INFO _msg= Indexer settings have been updated map[query_tmpspace_dir:/opt/couchbase/var/lib/couchbase/tmp query_tmpspace_limit:5120] 
+_time=2019-03-13T10:25:36.457+00:00 _level=INFO _msg=Created New Bucket main-bucket 
+2019-03-13T10:25:36.483+00:00 [Info] New settings received: 
+{"indexer.settings.compaction.days_of_week":"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday","indexer.settings.compaction.interval":"00:00,00:00","indexer.settings.compaction.compaction_mode":"circular","indexer.settings.persisted_snapshot.interval":5000,"indexer.settings.log_level":"info","indexer.settings.compaction.min_frag":30,"indexer.settings.inmemory_snapshot.interval":200,"indexer.settings.max_cpu_percent":0,"indexer.settings.storage_mode":"forestdb","indexer.settings.recovery.max_rollbacks":5,"indexer.settings.memory_quota":268435456,"indexer.settings.compaction.abort_exceed_interval":false}
+2019-03-13T10:25:36.559+00:00 [Info] MetadataProvider.SetClusterStatus(): healthy nodes 1 failed node 0 unhealthy node 0 add node 0
+2019-03-13T10:25:36.559+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:36.562+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:36.566+00:00 [Info] MetadataProvider.WatchMetadata(): indexer 127.0.0.1:9100
+2019-03-13T10:25:36.608+00:00 [Info] WatchMetadata(): successfully reach indexer at 127.0.0.1:9100.
+2019-03-13T10:25:36.613+00:00 [Info] MetadataProvider: Updating indexer version to 3
+2019-03-13T10:25:36.613+00:00 [Info] initialized currmeta 1 force true 
+2019-03-13T10:25:36.613+00:00 [Info] [Queryport-connpool:127.0.0.1:9101] started poolsize 5000 overflow 30 low WM 1000 relConn batch size 100 ...
+2019-03-13T10:25:36.614+00:00 [Info] [GsiScanClient:"127.0.0.1:9101"] started ...
+2019-03-13T10:25:36.615+00:00 [Info] [Queryport-connpool:127.0.0.1:9101] open new connection ...
+2019-03-13T10:25:36.617+00:00 [Info] servicesChangeNotifier: Creating new notifier instance for http://%40cbq-engine-cbauth@127.0.0.1:8091, default
+2019-03-13T10:25:36.625+00:00 [Info] GSIC[default/main-bucket-1552472736467051900] started ...
+2019-03-13T10:25:36.625+00:00 [Info] serviceChangeNotifier: received ServiceChangeNotification
+2019-03-13T10:25:36.626+00:00 [INFO]  Trying with http://127.0.0.1:8091/pools/default/bucketsStreaming/main-bucket 
+2019-03-13T10:25:36.640+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2019-03-13T10:25:36.655+00:00 [INFO] Got new configuration for bucket main-bucket 
+2019-03-13T10:25:36.660+00:00 [Info] send prepare create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:36.663+00:00 [Info] Indexer 127.0.0.1:9100 accept prepare create request. Index (main-bucket, sg_syncDocs_x1)
+2019-03-13T10:25:36.683+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:36.683+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:36.689+00:00 [Info] switched currmeta from 1 -> 1 force true 
+2019-03-13T10:25:36.733+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:36.733+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:36.745+00:00 [Info] switched currmeta from 1 -> 1 force true 
+2019-03-13T10:25:36.804+00:00 [Info] Planner::processCreateToken: There is no create token to process for node 127.0.0.1:8091
+2019-03-13T10:25:36.914+00:00 [Info] ************ Indexer Layout *************
+2019-03-13T10:25:36.914+00:00 [Info] Score: 0
+2019-03-13T10:25:36.914+00:00 [Info] variation: 0
+2019-03-13T10:25:36.914+00:00 [Info] ElapsedTime: 2ms
+2019-03-13T10:25:36.914+00:00 [Info] ConvergenceTime: 13us
+2019-03-13T10:25:36.914+00:00 [Info] Iteration: 0
+2019-03-13T10:25:36.914+00:00 [Info] Move: 0
+2019-03-13T10:25:36.914+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:36.914+00:00 [Info] Indexer Memory Mean 214748364 (204.8M)
+2019-03-13T10:25:36.914+00:00 [Info] Indexer Memory Deviation 0 (0) (0.00%)
+2019-03-13T10:25:36.914+00:00 [Info] Indexer Memory Utilization 0.8000
+2019-03-13T10:25:36.914+00:00 [Info] Indexer CPU Mean 0.0000
+2019-03-13T10:25:36.914+00:00 [Info] Indexer CPU Deviation 0.00 (0.00%)
+2019-03-13T10:25:36.914+00:00 [Info] Indexer CPU Utilization 0.0000
+2019-03-13T10:25:36.914+00:00 [Info] Indexer IO Mean 0.0000
+2019-03-13T10:25:36.914+00:00 [Info] Indexer IO Deviation 0.00 (0.00%)
+2019-03-13T10:25:36.914+00:00 [Info] Indexer Drain Rate Mean 0.0000
+2019-03-13T10:25:36.914+00:00 [Info] Indexer Drain Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:36.914+00:00 [Info] Indexer Scan Rate Mean 0.0000
+2019-03-13T10:25:36.914+00:00 [Info] Indexer Scan Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:36.915+00:00 [Info] Indexer Data Size Mean 214748364 (204.8M)
+2019-03-13T10:25:36.915+00:00 [Info] Indexer Data Size Deviation 0 (0) (0.00%)
+2019-03-13T10:25:36.915+00:00 [Info] Total Index Data (from non-deleted node) 0
+2019-03-13T10:25:36.915+00:00 [Info] Index Data Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:36.915+00:00 [Info] No. Index (from non-deleted node) 0
+2019-03-13T10:25:36.915+00:00 [Info] No. Index Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:36.915+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:36.915+00:00 [Info] Number of indexes: 1
+2019-03-13T10:25:36.915+00:00 [Info] Number of indexers: 1
+2019-03-13T10:25:36.915+00:00 [Info] Avg Index Size: 214748364 (204.8M)
+2019-03-13T10:25:36.915+00:00 [Info] Max Index Size: 214748364 (204.8M)
+2019-03-13T10:25:36.915+00:00 [Info] Max Indexer Overhead: 0 (0)
+2019-03-13T10:25:36.915+00:00 [Info] Avg Index Cpu: 0.0000
+2019-03-13T10:25:36.916+00:00 [Info] Max Index Cpu: 0.0000
+2019-03-13T10:25:36.916+00:00 [Info] Num Estimation Run: 1
+2019-03-13T10:25:36.916+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:36.916+00:00 [Info] Memory Quota 268435456 (256M)
+2019-03-13T10:25:36.916+00:00 [Info] CPU Quota 4
+2019-03-13T10:25:36.916+00:00 [Info] Max Cpu Utilization -1
+2019-03-13T10:25:36.916+00:00 [Info] Max Memory Utilization -1
+2019-03-13T10:25:36.916+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:36.916+00:00 [Info] Total iteration: 0
+2019-03-13T10:25:36.916+00:00 [Info] RandomSwap time: 0ns
+2019-03-13T10:25:36.916+00:00 [Info] RandomSwap call: 0
+2019-03-13T10:25:36.916+00:00 [Info] RandomSwap iteration: 0
+2019-03-13T10:25:36.916+00:00 [Info] RandomMove time: 0ns
+2019-03-13T10:25:36.916+00:00 [Info] RandomMove call: 0 (empty index 0)
+2019-03-13T10:25:36.916+00:00 [Info] ExhaustMove time: 0ns
+2019-03-13T10:25:36.916+00:00 [Info] ExhaustMove call: 0
+2019-03-13T10:25:36.916+00:00 [Info] ExhaustSwap time: 0ns
+2019-03-13T10:25:36.916+00:00 [Info] ExhaustSwap call: 0
+2019-03-13T10:25:36.916+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:36.917+00:00 [Info] 
+2019-03-13T10:25:36.917+00:00 [Info] Indexer serverGroup:Group 1, nodeId:127.0.0.1:8091, nodeUUID:809ca823974d9231aa4400d5407944e4, useLiveData:true
+2019-03-13T10:25:36.917+00:00 [Info] Indexer total memory:214748364 (204.8M), mem:214748364 (204.8M), overhead:0 (0), data:214748364 (204.8M) cpu:0.0000, io:0 (0), scan:0 drain:0 numIndexes:1
+2019-03-13T10:25:36.917+00:00 [Info] Indexer isDeleted:false isNew:false exclude: meetConstraint:true
+2019-03-13T10:25:36.917+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:36.918+00:00 [Info] 		Index name:sg_syncDocs_x1 0, bucket:main-bucket, defnId:5070926143484941682, instId:13391986059038217706, Partition: 0, new/moved:true
+2019-03-13T10:25:36.918+00:00 [Info] 		Index total memory:214748364 (204.8M), mem:214748364 (204.8M), overhead:0 (0), data:214748364 (204.8M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:36.918+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:36.919+00:00 [Info] ****************************************
+2019-03-13T10:25:36.920+00:00 [Info] send commit create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:37.027+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:37.027+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:37.033+00:00 [Info] switched currmeta from 1 -> 3 force true 
+2019-03-13T10:25:37.149+00:00 [Info] CreateIndex 5070926143484941682 main-bucket/sg_syncDocs_x1 using:GSI exprType:N1QL whereExpr:<ud>(((meta().`id`) like "\\_sync:%"))</ud> secExprs:<ud>([(meta().`id`)])</ud> desc:[false] isPrimary:false scheme:SINGLE  partitionKeys:<ud>([])</ud> with:{"defer_build":true} - elapsed(491.2482ms) err(<nil>)
+2019-03-13T10:25:37.149+00:00 [Info] metadata provider version changed 3 -> 4
+2019-03-13T10:25:37.149+00:00 [Info] switched currmeta from 3 -> 4 force false 
+2019-03-13T10:25:37.186+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:37.186+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:37.190+00:00 [Info] switched currmeta from 4 -> 4 force true 
+2019-03-13T10:25:37.210+00:00 [Info] send prepare create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:37.211+00:00 [Info] Indexer 127.0.0.1:9100 accept prepare create request. Index (main-bucket, sg_access_x1)
+2019-03-13T10:25:37.285+00:00 [Info] Planner: Processing create token for index 5070926143484941682 from node 127.0.0.1:8091
+2019-03-13T10:25:37.395+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:37.395+00:00 [Info] ************ Indexer Layout *************
+2019-03-13T10:25:37.396+00:00 [Info] Score: 0
+2019-03-13T10:25:37.396+00:00 [Info] variation: 0
+2019-03-13T10:25:37.396+00:00 [Info] ElapsedTime: 5ms
+2019-03-13T10:25:37.397+00:00 [Info] ConvergenceTime: 12us
+2019-03-13T10:25:37.397+00:00 [Info] Iteration: 0
+2019-03-13T10:25:37.397+00:00 [Info] Move: 0
+2019-03-13T10:25:37.398+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.398+00:00 [Info] Indexer Memory Mean 214748364 (204.8M)
+2019-03-13T10:25:37.398+00:00 [Info] Indexer Memory Deviation 0 (0) (0.00%)
+2019-03-13T10:25:37.398+00:00 [Info] Indexer Memory Utilization 0.8000
+2019-03-13T10:25:37.398+00:00 [Info] Indexer CPU Mean 0.0000
+2019-03-13T10:25:37.398+00:00 [Info] Indexer CPU Deviation 0.00 (0.00%)
+2019-03-13T10:25:37.398+00:00 [Info] Indexer CPU Utilization 0.0000
+2019-03-13T10:25:37.398+00:00 [Info] Indexer IO Mean 0.0000
+2019-03-13T10:25:37.398+00:00 [Info] Indexer IO Deviation 0.00 (0.00%)
+2019-03-13T10:25:37.398+00:00 [Info] Indexer Drain Rate Mean 0.0000
+2019-03-13T10:25:37.398+00:00 [Info] Indexer Drain Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:37.398+00:00 [Info] Indexer Scan Rate Mean 0.0000
+2019-03-13T10:25:37.398+00:00 [Info] Indexer Scan Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:37.398+00:00 [Info] Indexer Data Size Mean 214748364 (204.8M)
+2019-03-13T10:25:37.398+00:00 [Info] Indexer Data Size Deviation 0 (0) (0.00%)
+2019-03-13T10:25:37.398+00:00 [Info] Total Index Data (from non-deleted node) 0
+2019-03-13T10:25:37.398+00:00 [Info] Index Data Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:37.398+00:00 [Info] No. Index (from non-deleted node) 0
+2019-03-13T10:25:37.398+00:00 [Info] No. Index Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:37.398+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.399+00:00 [Info] Number of indexes: 2
+2019-03-13T10:25:37.399+00:00 [Info] Number of indexers: 1
+2019-03-13T10:25:37.399+00:00 [Info] Avg Index Size: 107374182 (102.4M)
+2019-03-13T10:25:37.399+00:00 [Info] Max Index Size: 107374182 (102.4M)
+2019-03-13T10:25:37.399+00:00 [Info] Max Indexer Overhead: 0 (0)
+2019-03-13T10:25:37.399+00:00 [Info] Avg Index Cpu: 0.0000
+2019-03-13T10:25:37.400+00:00 [Info] Max Index Cpu: 0.0000
+2019-03-13T10:25:37.400+00:00 [Info] Num Estimation Run: 1
+2019-03-13T10:25:37.400+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.400+00:00 [Info] Memory Quota 268435456 (256M)
+2019-03-13T10:25:37.401+00:00 [Info] CPU Quota 4
+2019-03-13T10:25:37.401+00:00 [Info] Max Cpu Utilization -1
+2019-03-13T10:25:37.401+00:00 [Info] Max Memory Utilization -1
+2019-03-13T10:25:37.402+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.402+00:00 [Info] Total iteration: 0
+2019-03-13T10:25:37.402+00:00 [Info] RandomSwap time: 0ns
+2019-03-13T10:25:37.402+00:00 [Info] RandomSwap call: 0
+2019-03-13T10:25:37.402+00:00 [Info] RandomSwap iteration: 0
+2019-03-13T10:25:37.402+00:00 [Info] RandomMove time: 0ns
+2019-03-13T10:25:37.403+00:00 [Info] RandomMove call: 0 (empty index 0)
+2019-03-13T10:25:37.403+00:00 [Info] ExhaustMove time: 0ns
+2019-03-13T10:25:37.403+00:00 [Info] ExhaustMove call: 0
+2019-03-13T10:25:37.404+00:00 [Info] ExhaustSwap time: 0ns
+2019-03-13T10:25:37.404+00:00 [Info] ExhaustSwap call: 0
+2019-03-13T10:25:37.404+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.404+00:00 [Info] 
+2019-03-13T10:25:37.404+00:00 [Info] Indexer serverGroup:Group 1, nodeId:127.0.0.1:8091, nodeUUID:809ca823974d9231aa4400d5407944e4, useLiveData:true
+2019-03-13T10:25:37.405+00:00 [Info] Indexer total memory:214748364 (204.8M), mem:214748364 (204.8M), overhead:0 (0), data:214748364 (204.8M) cpu:0.0000, io:0 (0), scan:0 drain:0 numIndexes:2
+2019-03-13T10:25:37.405+00:00 [Info] Indexer isDeleted:false isNew:false exclude: meetConstraint:true
+2019-03-13T10:25:37.406+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:37.406+00:00 [Info] 		Index name:sg_syncDocs_x1 0, bucket:main-bucket, defnId:5070926143484941682, instId:14060262344087111746, Partition: 0, new/moved:false
+2019-03-13T10:25:37.406+00:00 [Info] 		Index total memory:107374182 (102.4M), mem:107374182 (102.4M), overhead:0 (0), data:107374182 (102.4M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:37.406+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:37.406+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:37.406+00:00 [Info] 		Index name:sg_access_x1 0, bucket:main-bucket, defnId:9412130430611319344, instId:1384240059150835905, Partition: 0, new/moved:true
+2019-03-13T10:25:37.406+00:00 [Info] 		Index total memory:107374182 (102.4M), mem:107374182 (102.4M), overhead:0 (0), data:107374182 (102.4M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:37.407+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:37.408+00:00 [Info] ****************************************
+2019-03-13T10:25:37.408+00:00 [Info] send commit create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:37.500+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:37.501+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:37.503+00:00 [Info] switched currmeta from 4 -> 6 force true 
+2019-03-13T10:25:37.602+00:00 [Info] CreateIndex 9412130430611319344 main-bucket/sg_access_x1 using:GSI exprType:N1QL whereExpr:<ud>()</ud> secExprs:<ud>([(all (array (`op`.`name`) for `op` in object_pairs((((meta().`xattrs`).`_sync`).`access`)) end))])</ud> desc:[false] isPrimary:false scheme:SINGLE  partitionKeys:<ud>([])</ud> with:{"defer_build":true,"retain_deleted_xattr":true} - elapsed(394.5995ms) err(<nil>)
+2019-03-13T10:25:37.602+00:00 [Info] metadata provider version changed 6 -> 7
+2019-03-13T10:25:37.602+00:00 [Info] switched currmeta from 6 -> 7 force false 
+2019-03-13T10:25:37.652+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:37.652+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:37.661+00:00 [Info] switched currmeta from 7 -> 7 force true 
+2019-03-13T10:25:37.674+00:00 [Info] send prepare create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:37.676+00:00 [Info] Indexer 127.0.0.1:9100 accept prepare create request. Index (main-bucket, sg_roleAccess_x1)
+2019-03-13T10:25:37.766+00:00 [Info] Planner: Processing create token for index 9412130430611319344 from node 127.0.0.1:8091
+2019-03-13T10:25:37.766+00:00 [Info] Planner: Processing create token for index 5070926143484941682 from node 127.0.0.1:8091
+2019-03-13T10:25:37.892+00:00 [Info] ************ Indexer Layout *************
+2019-03-13T10:25:37.892+00:00 [Info] Score: 0
+2019-03-13T10:25:37.892+00:00 [Info] variation: 0
+2019-03-13T10:25:37.892+00:00 [Info] ElapsedTime: 11ms
+2019-03-13T10:25:37.892+00:00 [Info] ConvergenceTime: 12us
+2019-03-13T10:25:37.892+00:00 [Info] Iteration: 0
+2019-03-13T10:25:37.892+00:00 [Info] Move: 0
+2019-03-13T10:25:37.892+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.892+00:00 [Info] Indexer Memory Mean 214748364 (204.8M)
+2019-03-13T10:25:37.892+00:00 [Info] Indexer Memory Deviation 0 (0) (0.00%)
+2019-03-13T10:25:37.892+00:00 [Info] Indexer Memory Utilization 0.8000
+2019-03-13T10:25:37.892+00:00 [Info] Indexer CPU Mean 0.0000
+2019-03-13T10:25:37.892+00:00 [Info] Indexer CPU Deviation 0.00 (0.00%)
+2019-03-13T10:25:37.892+00:00 [Info] Indexer CPU Utilization 0.0000
+2019-03-13T10:25:37.892+00:00 [Info] Indexer IO Mean 0.0000
+2019-03-13T10:25:37.892+00:00 [Info] Indexer IO Deviation 0.00 (0.00%)
+2019-03-13T10:25:37.892+00:00 [Info] Indexer Drain Rate Mean 0.0000
+2019-03-13T10:25:37.892+00:00 [Info] Indexer Drain Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:37.892+00:00 [Info] Indexer Scan Rate Mean 0.0000
+2019-03-13T10:25:37.892+00:00 [Info] Indexer Scan Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:37.892+00:00 [Info] Indexer Data Size Mean 214748364 (204.8M)
+2019-03-13T10:25:37.892+00:00 [Info] Indexer Data Size Deviation 0 (0) (0.00%)
+2019-03-13T10:25:37.892+00:00 [Info] Total Index Data (from non-deleted node) 0
+2019-03-13T10:25:37.893+00:00 [Info] Index Data Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:37.893+00:00 [Info] No. Index (from non-deleted node) 0
+2019-03-13T10:25:37.893+00:00 [Info] No. Index Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:37.893+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.893+00:00 [Info] Number of indexes: 3
+2019-03-13T10:25:37.893+00:00 [Info] Number of indexers: 1
+2019-03-13T10:25:37.893+00:00 [Info] Avg Index Size: 71582788 (68.2667M)
+2019-03-13T10:25:37.893+00:00 [Info] Max Index Size: 71582788 (68.2667M)
+2019-03-13T10:25:37.893+00:00 [Info] Max Indexer Overhead: 0 (0)
+2019-03-13T10:25:37.893+00:00 [Info] Avg Index Cpu: 0.0000
+2019-03-13T10:25:37.893+00:00 [Info] Max Index Cpu: 0.0000
+2019-03-13T10:25:37.893+00:00 [Info] Num Estimation Run: 1
+2019-03-13T10:25:37.893+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.893+00:00 [Info] Memory Quota 268435456 (256M)
+2019-03-13T10:25:37.893+00:00 [Info] CPU Quota 4
+2019-03-13T10:25:37.893+00:00 [Info] Max Cpu Utilization -1
+2019-03-13T10:25:37.893+00:00 [Info] Max Memory Utilization -1
+2019-03-13T10:25:37.893+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.893+00:00 [Info] Total iteration: 0
+2019-03-13T10:25:37.893+00:00 [Info] RandomSwap time: 0ns
+2019-03-13T10:25:37.893+00:00 [Info] RandomSwap call: 0
+2019-03-13T10:25:37.893+00:00 [Info] RandomSwap iteration: 0
+2019-03-13T10:25:37.893+00:00 [Info] RandomMove time: 0ns
+2019-03-13T10:25:37.893+00:00 [Info] RandomMove call: 0 (empty index 0)
+2019-03-13T10:25:37.893+00:00 [Info] ExhaustMove time: 0ns
+2019-03-13T10:25:37.893+00:00 [Info] ExhaustMove call: 0
+2019-03-13T10:25:37.893+00:00 [Info] ExhaustSwap time: 0ns
+2019-03-13T10:25:37.893+00:00 [Info] ExhaustSwap call: 0
+2019-03-13T10:25:37.893+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:37.893+00:00 [Info] 
+2019-03-13T10:25:37.893+00:00 [Info] Indexer serverGroup:Group 1, nodeId:127.0.0.1:8091, nodeUUID:809ca823974d9231aa4400d5407944e4, useLiveData:true
+2019-03-13T10:25:37.893+00:00 [Info] Indexer total memory:214748364 (204.8M), mem:214748364 (204.8M), overhead:0 (0), data:214748364 (204.8M) cpu:0.0000, io:0 (0), scan:0 drain:0 numIndexes:3
+2019-03-13T10:25:37.893+00:00 [Info] Indexer isDeleted:false isNew:false exclude: meetConstraint:true
+2019-03-13T10:25:37.893+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:37.893+00:00 [Info] 		Index name:sg_syncDocs_x1 0, bucket:main-bucket, defnId:5070926143484941682, instId:14060262344087111746, Partition: 0, new/moved:false
+2019-03-13T10:25:37.893+00:00 [Info] 		Index total memory:71582788 (68.2667M), mem:71582788 (68.2667M), overhead:0 (0), data:71582788 (68.2667M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:37.893+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:37.893+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:37.893+00:00 [Info] 		Index name:sg_access_x1 0, bucket:main-bucket, defnId:9412130430611319344, instId:8625970443409330988, Partition: 0, new/moved:false
+2019-03-13T10:25:37.894+00:00 [Info] 		Index total memory:71582788 (68.2667M), mem:71582788 (68.2667M), overhead:0 (0), data:71582788 (68.2667M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:37.894+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:37.894+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:37.894+00:00 [Info] 		Index name:sg_roleAccess_x1 0, bucket:main-bucket, defnId:15487761953577109451, instId:7101866732728035913, Partition: 0, new/moved:true
+2019-03-13T10:25:37.894+00:00 [Info] 		Index total memory:71582788 (68.2667M), mem:71582788 (68.2667M), overhead:0 (0), data:71582788 (68.2667M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:37.894+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:37.894+00:00 [Info] ****************************************
+2019-03-13T10:25:37.894+00:00 [Info] send commit create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:37.913+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:37.988+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:37.988+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:37.992+00:00 [Info] switched currmeta from 7 -> 9 force true 
+2019-03-13T10:25:38.123+00:00 [Info] CreateIndex 15487761953577109451 main-bucket/sg_roleAccess_x1 using:GSI exprType:N1QL whereExpr:<ud>()</ud> secExprs:<ud>([(all (array (`op`.`name`) for `op` in object_pairs((((meta().`xattrs`).`_sync`).`role_access`)) end))])</ud> desc:[false] isPrimary:false scheme:SINGLE  partitionKeys:<ud>([])</ud> with:{"defer_build":true,"retain_deleted_xattr":true} - elapsed(452.1629ms) err(<nil>)
+2019-03-13T10:25:38.123+00:00 [Info] metadata provider version changed 9 -> 10
+2019-03-13T10:25:38.123+00:00 [Info] switched currmeta from 9 -> 10 force false 
+2019-03-13T10:25:38.166+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:38.166+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:38.169+00:00 [Info] switched currmeta from 10 -> 10 force true 
+2019-03-13T10:25:38.187+00:00 [Info] send prepare create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:38.190+00:00 [Info] Indexer 127.0.0.1:9100 accept prepare create request. Index (main-bucket, sg_channels_x1)
+2019-03-13T10:25:38.276+00:00 [Info] Planner: Processing create token for index 15487761953577109451 from node 127.0.0.1:8091
+2019-03-13T10:25:38.342+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:38.383+00:00 [Info] ************ Indexer Layout *************
+2019-03-13T10:25:38.383+00:00 [Info] Score: 0
+2019-03-13T10:25:38.383+00:00 [Info] variation: 0
+2019-03-13T10:25:38.384+00:00 [Info] ElapsedTime: 1ms
+2019-03-13T10:25:38.384+00:00 [Info] ConvergenceTime: 12us
+2019-03-13T10:25:38.384+00:00 [Info] Iteration: 0
+2019-03-13T10:25:38.384+00:00 [Info] Move: 0
+2019-03-13T10:25:38.384+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.384+00:00 [Info] Indexer Memory Mean 214748364 (204.8M)
+2019-03-13T10:25:38.384+00:00 [Info] Indexer Memory Deviation 0 (0) (0.00%)
+2019-03-13T10:25:38.384+00:00 [Info] Indexer Memory Utilization 0.8000
+2019-03-13T10:25:38.384+00:00 [Info] Indexer CPU Mean 0.0000
+2019-03-13T10:25:38.384+00:00 [Info] Indexer CPU Deviation 0.00 (0.00%)
+2019-03-13T10:25:38.384+00:00 [Info] Indexer CPU Utilization 0.0000
+2019-03-13T10:25:38.384+00:00 [Info] Indexer IO Mean 0.0000
+2019-03-13T10:25:38.384+00:00 [Info] Indexer IO Deviation 0.00 (0.00%)
+2019-03-13T10:25:38.384+00:00 [Info] Indexer Drain Rate Mean 0.0000
+2019-03-13T10:25:38.384+00:00 [Info] Indexer Drain Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:38.384+00:00 [Info] Indexer Scan Rate Mean 0.0000
+2019-03-13T10:25:38.384+00:00 [Info] Indexer Scan Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:38.384+00:00 [Info] Indexer Data Size Mean 214748364 (204.8M)
+2019-03-13T10:25:38.384+00:00 [Info] Indexer Data Size Deviation 0 (0) (0.00%)
+2019-03-13T10:25:38.384+00:00 [Info] Total Index Data (from non-deleted node) 0
+2019-03-13T10:25:38.384+00:00 [Info] Index Data Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:38.384+00:00 [Info] No. Index (from non-deleted node) 0
+2019-03-13T10:25:38.384+00:00 [Info] No. Index Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:38.385+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.385+00:00 [Info] Number of indexes: 4
+2019-03-13T10:25:38.385+00:00 [Info] Number of indexers: 1
+2019-03-13T10:25:38.385+00:00 [Info] Avg Index Size: 53687091 (51.2M)
+2019-03-13T10:25:38.385+00:00 [Info] Max Index Size: 53687091 (51.2M)
+2019-03-13T10:25:38.385+00:00 [Info] Max Indexer Overhead: 0 (0)
+2019-03-13T10:25:38.385+00:00 [Info] Avg Index Cpu: 0.0000
+2019-03-13T10:25:38.385+00:00 [Info] Max Index Cpu: 0.0000
+2019-03-13T10:25:38.385+00:00 [Info] Num Estimation Run: 1
+2019-03-13T10:25:38.385+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.385+00:00 [Info] Memory Quota 268435456 (256M)
+2019-03-13T10:25:38.385+00:00 [Info] CPU Quota 4
+2019-03-13T10:25:38.385+00:00 [Info] Max Cpu Utilization -1
+2019-03-13T10:25:38.385+00:00 [Info] Max Memory Utilization -1
+2019-03-13T10:25:38.385+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.385+00:00 [Info] Total iteration: 0
+2019-03-13T10:25:38.385+00:00 [Info] RandomSwap time: 0ns
+2019-03-13T10:25:38.385+00:00 [Info] RandomSwap call: 0
+2019-03-13T10:25:38.385+00:00 [Info] RandomSwap iteration: 0
+2019-03-13T10:25:38.385+00:00 [Info] RandomMove time: 0ns
+2019-03-13T10:25:38.385+00:00 [Info] RandomMove call: 0 (empty index 0)
+2019-03-13T10:25:38.385+00:00 [Info] ExhaustMove time: 0ns
+2019-03-13T10:25:38.386+00:00 [Info] ExhaustMove call: 0
+2019-03-13T10:25:38.386+00:00 [Info] ExhaustSwap time: 0ns
+2019-03-13T10:25:38.386+00:00 [Info] ExhaustSwap call: 0
+2019-03-13T10:25:38.386+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.386+00:00 [Info] 
+2019-03-13T10:25:38.386+00:00 [Info] Indexer serverGroup:Group 1, nodeId:127.0.0.1:8091, nodeUUID:809ca823974d9231aa4400d5407944e4, useLiveData:true
+2019-03-13T10:25:38.386+00:00 [Info] Indexer total memory:214748364 (204.8M), mem:214748364 (204.8M), overhead:0 (0), data:214748364 (204.8M) cpu:0.0000, io:0 (0), scan:0 drain:0 numIndexes:4
+2019-03-13T10:25:38.386+00:00 [Info] Indexer isDeleted:false isNew:false exclude: meetConstraint:true
+2019-03-13T10:25:38.386+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:38.386+00:00 [Info] 		Index name:sg_syncDocs_x1 0, bucket:main-bucket, defnId:5070926143484941682, instId:14060262344087111746, Partition: 0, new/moved:false
+2019-03-13T10:25:38.386+00:00 [Info] 		Index total memory:53687091 (51.2M), mem:53687091 (51.2M), overhead:0 (0), data:53687091 (51.2M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:38.386+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:38.386+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:38.386+00:00 [Info] 		Index name:sg_access_x1 0, bucket:main-bucket, defnId:9412130430611319344, instId:8625970443409330988, Partition: 0, new/moved:false
+2019-03-13T10:25:38.386+00:00 [Info] 		Index total memory:53687091 (51.2M), mem:53687091 (51.2M), overhead:0 (0), data:53687091 (51.2M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:38.387+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:38.387+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:38.387+00:00 [Info] 		Index name:sg_roleAccess_x1 0, bucket:main-bucket, defnId:15487761953577109451, instId:3174249453258515325, Partition: 0, new/moved:false
+2019-03-13T10:25:38.387+00:00 [Info] 		Index total memory:53687091 (51.2M), mem:53687091 (51.2M), overhead:0 (0), data:53687091 (51.2M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:38.387+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:38.387+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:38.387+00:00 [Info] 		Index name:sg_channels_x1 0, bucket:main-bucket, defnId:1463642697455786761, instId:17495501369886639806, Partition: 0, new/moved:true
+2019-03-13T10:25:38.387+00:00 [Info] 		Index total memory:53687091 (51.2M), mem:53687091 (51.2M), overhead:0 (0), data:53687091 (51.2M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:38.387+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:38.387+00:00 [Info] ****************************************
+2019-03-13T10:25:38.387+00:00 [Info] send commit create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:38.498+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:38.498+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:38.502+00:00 [Info] switched currmeta from 10 -> 12 force true 
+2019-03-13T10:25:38.635+00:00 [Info] CreateIndex 1463642697455786761 main-bucket/sg_channels_x1 using:GSI exprType:N1QL whereExpr:<ud>()</ud> secExprs:<ud>([(all (array [(`op`.`name`), least((((meta().`xattrs`).`_sync`).`sequence`), ((`op`.`val`).`seq`)), ifmissing(((`op`.`val`).`rev`), null), ifmissing(((`op`.`val`).`del`), null)] for `op` in object_pairs((((meta().`xattrs`).`_sync`).`channels`)) end)) (((meta().`xattrs`).`_sync`).`rev`) (((meta().`xattrs`).`_sync`).`sequence`) (((meta().`xattrs`).`_sync`).`flags`)])</ud> desc:[false false false false] isPrimary:false scheme:SINGLE  partitionKeys:<ud>([])</ud> with:{"defer_build":true,"retain_deleted_xattr":true} - elapsed(455.6419ms) err(<nil>)
+2019-03-13T10:25:38.635+00:00 [Info] metadata provider version changed 12 -> 13
+2019-03-13T10:25:38.635+00:00 [Info] switched currmeta from 12 -> 13 force false 
+2019-03-13T10:25:38.683+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:38.684+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:38.691+00:00 [Info] switched currmeta from 13 -> 13 force true 
+2019-03-13T10:25:38.717+00:00 [Info] send prepare create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:38.718+00:00 [Info] Indexer 127.0.0.1:9100 accept prepare create request. Index (main-bucket, sg_allDocs_x1)
+2019-03-13T10:25:38.817+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:38.848+00:00 [Info] Planner: Processing create token for index 1463642697455786761 from node 127.0.0.1:8091
+2019-03-13T10:25:38.849+00:00 [Info] Planner: Processing create token for index 15487761953577109451 from node 127.0.0.1:8091
+2019-03-13T10:25:38.971+00:00 [Info] ************ Indexer Layout *************
+2019-03-13T10:25:38.971+00:00 [Info] Score: 0
+2019-03-13T10:25:38.971+00:00 [Info] variation: 0
+2019-03-13T10:25:38.972+00:00 [Info] ElapsedTime: 2ms
+2019-03-13T10:25:38.972+00:00 [Info] ConvergenceTime: 13us
+2019-03-13T10:25:38.973+00:00 [Info] Iteration: 0
+2019-03-13T10:25:38.974+00:00 [Info] Move: 0
+2019-03-13T10:25:38.974+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.975+00:00 [Info] Indexer Memory Mean 214748360 (204.8M)
+2019-03-13T10:25:38.975+00:00 [Info] Indexer Memory Deviation 0 (0) (0.00%)
+2019-03-13T10:25:38.976+00:00 [Info] Indexer Memory Utilization 0.8000
+2019-03-13T10:25:38.976+00:00 [Info] Indexer CPU Mean 0.0000
+2019-03-13T10:25:38.977+00:00 [Info] Indexer CPU Deviation 0.00 (0.00%)
+2019-03-13T10:25:38.977+00:00 [Info] Indexer CPU Utilization 0.0000
+2019-03-13T10:25:38.978+00:00 [Info] Indexer IO Mean 0.0000
+2019-03-13T10:25:38.978+00:00 [Info] Indexer IO Deviation 0.00 (0.00%)
+2019-03-13T10:25:38.979+00:00 [Info] Indexer Drain Rate Mean 0.0000
+2019-03-13T10:25:38.980+00:00 [Info] Indexer Drain Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:38.980+00:00 [Info] Indexer Scan Rate Mean 0.0000
+2019-03-13T10:25:38.981+00:00 [Info] Indexer Scan Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:38.984+00:00 [Info] Indexer Data Size Mean 214748360 (204.8M)
+2019-03-13T10:25:38.985+00:00 [Info] Indexer Data Size Deviation 0 (0) (0.00%)
+2019-03-13T10:25:38.987+00:00 [Info] Total Index Data (from non-deleted node) 0
+2019-03-13T10:25:38.988+00:00 [Info] Index Data Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:38.988+00:00 [Info] No. Index (from non-deleted node) 0
+2019-03-13T10:25:38.988+00:00 [Info] No. Index Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:38.989+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.989+00:00 [Info] Number of indexes: 5
+2019-03-13T10:25:38.989+00:00 [Info] Number of indexers: 1
+2019-03-13T10:25:38.991+00:00 [Info] Avg Index Size: 42949672 (40.96M)
+2019-03-13T10:25:38.991+00:00 [Info] Max Index Size: 42949672 (40.96M)
+2019-03-13T10:25:38.992+00:00 [Info] Max Indexer Overhead: 0 (0)
+2019-03-13T10:25:38.992+00:00 [Info] Avg Index Cpu: 0.0000
+2019-03-13T10:25:38.992+00:00 [Info] Max Index Cpu: 0.0000
+2019-03-13T10:25:38.993+00:00 [Info] Num Estimation Run: 1
+2019-03-13T10:25:38.993+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.993+00:00 [Info] Memory Quota 268435456 (256M)
+2019-03-13T10:25:38.993+00:00 [Info] CPU Quota 4
+2019-03-13T10:25:38.994+00:00 [Info] Max Cpu Utilization -1
+2019-03-13T10:25:38.994+00:00 [Info] Max Memory Utilization -1
+2019-03-13T10:25:38.994+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.995+00:00 [Info] Total iteration: 0
+2019-03-13T10:25:38.995+00:00 [Info] RandomSwap time: 0ns
+2019-03-13T10:25:38.995+00:00 [Info] RandomSwap call: 0
+2019-03-13T10:25:38.996+00:00 [Info] RandomSwap iteration: 0
+2019-03-13T10:25:38.996+00:00 [Info] RandomMove time: 0ns
+2019-03-13T10:25:38.997+00:00 [Info] RandomMove call: 0 (empty index 0)
+2019-03-13T10:25:38.997+00:00 [Info] ExhaustMove time: 0ns
+2019-03-13T10:25:38.997+00:00 [Info] ExhaustMove call: 0
+2019-03-13T10:25:38.997+00:00 [Info] ExhaustSwap time: 0ns
+2019-03-13T10:25:38.998+00:00 [Info] ExhaustSwap call: 0
+2019-03-13T10:25:38.998+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:38.999+00:00 [Info] 
+2019-03-13T10:25:38.999+00:00 [Info] Indexer serverGroup:Group 1, nodeId:127.0.0.1:8091, nodeUUID:809ca823974d9231aa4400d5407944e4, useLiveData:true
+2019-03-13T10:25:38.999+00:00 [Info] Indexer total memory:214748360 (204.8M), mem:214748360 (204.8M), overhead:0 (0), data:214748360 (204.8M) cpu:0.0000, io:0 (0), scan:0 drain:0 numIndexes:5
+2019-03-13T10:25:39.000+00:00 [Info] Indexer isDeleted:false isNew:false exclude: meetConstraint:true
+2019-03-13T10:25:39.002+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.002+00:00 [Info] 		Index name:sg_syncDocs_x1 0, bucket:main-bucket, defnId:5070926143484941682, instId:14060262344087111746, Partition: 0, new/moved:false
+2019-03-13T10:25:39.002+00:00 [Info] 		Index total memory:42949672 (40.96M), mem:42949672 (40.96M), overhead:0 (0), data:42949672 (40.96M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.002+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.002+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.003+00:00 [Info] 		Index name:sg_access_x1 0, bucket:main-bucket, defnId:9412130430611319344, instId:8625970443409330988, Partition: 0, new/moved:false
+2019-03-13T10:25:39.003+00:00 [Info] 		Index total memory:42949672 (40.96M), mem:42949672 (40.96M), overhead:0 (0), data:42949672 (40.96M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.003+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.003+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.003+00:00 [Info] 		Index name:sg_roleAccess_x1 0, bucket:main-bucket, defnId:15487761953577109451, instId:3174249453258515325, Partition: 0, new/moved:false
+2019-03-13T10:25:39.003+00:00 [Info] 		Index total memory:42949672 (40.96M), mem:42949672 (40.96M), overhead:0 (0), data:42949672 (40.96M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.003+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.003+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.003+00:00 [Info] 		Index name:sg_channels_x1 0, bucket:main-bucket, defnId:1463642697455786761, instId:16319037896255442729, Partition: 0, new/moved:false
+2019-03-13T10:25:39.003+00:00 [Info] 		Index total memory:42949672 (40.96M), mem:42949672 (40.96M), overhead:0 (0), data:42949672 (40.96M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.003+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.003+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.003+00:00 [Info] 		Index name:sg_allDocs_x1 0, bucket:main-bucket, defnId:16489805899542037717, instId:2902291626850052464, Partition: 0, new/moved:true
+2019-03-13T10:25:39.003+00:00 [Info] 		Index total memory:42949672 (40.96M), mem:42949672 (40.96M), overhead:0 (0), data:42949672 (40.96M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.003+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.003+00:00 [Info] ****************************************
+2019-03-13T10:25:39.004+00:00 [Info] send commit create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:39.124+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:39.124+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:39.128+00:00 [Info] switched currmeta from 13 -> 15 force true 
+2019-03-13T10:25:39.262+00:00 [Info] CreateIndex 16489805899542037717 main-bucket/sg_allDocs_x1 using:GSI exprType:N1QL whereExpr:<ud>((not ((meta().`id`) like "\\_sync:%")))</ud> secExprs:<ud>([(((meta().`xattrs`).`_sync`).`sequence`) (((meta().`xattrs`).`_sync`).`rev`) (((meta().`xattrs`).`_sync`).`flags`) (((meta().`xattrs`).`_sync`).`deleted`)])</ud> desc:[false false false false] isPrimary:false scheme:SINGLE  partitionKeys:<ud>([])</ud> with:{"defer_build":true,"retain_deleted_xattr":true} - elapsed(548.8026ms) err(<nil>)
+2019-03-13T10:25:39.262+00:00 [Info] metadata provider version changed 15 -> 16
+2019-03-13T10:25:39.262+00:00 [Info] switched currmeta from 15 -> 16 force false 
+2019-03-13T10:25:39.317+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:39.317+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:39.326+00:00 [Info] switched currmeta from 16 -> 16 force true 
+2019-03-13T10:25:39.337+00:00 [Info] send prepare create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:39.344+00:00 [Info] Indexer 127.0.0.1:9100 accept prepare create request. Index (main-bucket, sg_tombstones_x1)
+2019-03-13T10:25:39.386+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:39.475+00:00 [Info] Planner: Processing create token for index 16489805899542037717 from node 127.0.0.1:8091
+2019-03-13T10:25:39.590+00:00 [Info] ************ Indexer Layout *************
+2019-03-13T10:25:39.590+00:00 [Info] Score: 0
+2019-03-13T10:25:39.590+00:00 [Info] variation: 0
+2019-03-13T10:25:39.590+00:00 [Info] ElapsedTime: 2ms
+2019-03-13T10:25:39.590+00:00 [Info] ConvergenceTime: 12us
+2019-03-13T10:25:39.590+00:00 [Info] Iteration: 0
+2019-03-13T10:25:39.590+00:00 [Info] Move: 0
+2019-03-13T10:25:39.591+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:39.591+00:00 [Info] Indexer Memory Mean 214748364 (204.8M)
+2019-03-13T10:25:39.591+00:00 [Info] Indexer Memory Deviation 0 (0) (0.00%)
+2019-03-13T10:25:39.591+00:00 [Info] Indexer Memory Utilization 0.8000
+2019-03-13T10:25:39.591+00:00 [Info] Indexer CPU Mean 0.0000
+2019-03-13T10:25:39.591+00:00 [Info] Indexer CPU Deviation 0.00 (0.00%)
+2019-03-13T10:25:39.591+00:00 [Info] Indexer CPU Utilization 0.0000
+2019-03-13T10:25:39.591+00:00 [Info] Indexer IO Mean 0.0000
+2019-03-13T10:25:39.591+00:00 [Info] Indexer IO Deviation 0.00 (0.00%)
+2019-03-13T10:25:39.591+00:00 [Info] Indexer Drain Rate Mean 0.0000
+2019-03-13T10:25:39.591+00:00 [Info] Indexer Drain Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:39.592+00:00 [Info] Indexer Scan Rate Mean 0.0000
+2019-03-13T10:25:39.592+00:00 [Info] Indexer Scan Rate Deviation 0.00 (0.00%)
+2019-03-13T10:25:39.592+00:00 [Info] Indexer Data Size Mean 214748364 (204.8M)
+2019-03-13T10:25:39.592+00:00 [Info] Indexer Data Size Deviation 0 (0) (0.00%)
+2019-03-13T10:25:39.592+00:00 [Info] Total Index Data (from non-deleted node) 0
+2019-03-13T10:25:39.592+00:00 [Info] Index Data Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:39.592+00:00 [Info] No. Index (from non-deleted node) 0
+2019-03-13T10:25:39.592+00:00 [Info] No. Index Moved (exclude new node) 0 (0.00%)
+2019-03-13T10:25:39.592+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:39.592+00:00 [Info] Number of indexes: 6
+2019-03-13T10:25:39.592+00:00 [Info] Number of indexers: 1
+2019-03-13T10:25:39.592+00:00 [Info] Avg Index Size: 35791394 (34.1333M)
+2019-03-13T10:25:39.592+00:00 [Info] Max Index Size: 35791394 (34.1333M)
+2019-03-13T10:25:39.592+00:00 [Info] Max Indexer Overhead: 0 (0)
+2019-03-13T10:25:39.592+00:00 [Info] Avg Index Cpu: 0.0000
+2019-03-13T10:25:39.592+00:00 [Info] Max Index Cpu: 0.0000
+2019-03-13T10:25:39.592+00:00 [Info] Num Estimation Run: 1
+2019-03-13T10:25:39.592+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:39.593+00:00 [Info] Memory Quota 268435456 (256M)
+2019-03-13T10:25:39.593+00:00 [Info] CPU Quota 4
+2019-03-13T10:25:39.593+00:00 [Info] Max Cpu Utilization -1
+2019-03-13T10:25:39.593+00:00 [Info] Max Memory Utilization -1
+2019-03-13T10:25:39.593+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:39.593+00:00 [Info] Total iteration: 0
+2019-03-13T10:25:39.593+00:00 [Info] RandomSwap time: 0ns
+2019-03-13T10:25:39.593+00:00 [Info] RandomSwap call: 0
+2019-03-13T10:25:39.593+00:00 [Info] RandomSwap iteration: 0
+2019-03-13T10:25:39.593+00:00 [Info] RandomMove time: 0ns
+2019-03-13T10:25:39.593+00:00 [Info] RandomMove call: 0 (empty index 0)
+2019-03-13T10:25:39.593+00:00 [Info] ExhaustMove time: 0ns
+2019-03-13T10:25:39.593+00:00 [Info] ExhaustMove call: 0
+2019-03-13T10:25:39.593+00:00 [Info] ExhaustSwap time: 0ns
+2019-03-13T10:25:39.593+00:00 [Info] ExhaustSwap call: 0
+2019-03-13T10:25:39.593+00:00 [Info] ----------------------------------------
+2019-03-13T10:25:39.594+00:00 [Info] 
+2019-03-13T10:25:39.594+00:00 [Info] Indexer serverGroup:Group 1, nodeId:127.0.0.1:8091, nodeUUID:809ca823974d9231aa4400d5407944e4, useLiveData:true
+2019-03-13T10:25:39.594+00:00 [Info] Indexer total memory:214748364 (204.8M), mem:214748364 (204.8M), overhead:0 (0), data:214748364 (204.8M) cpu:0.0000, io:0 (0), scan:0 drain:0 numIndexes:6
+2019-03-13T10:25:39.594+00:00 [Info] Indexer isDeleted:false isNew:false exclude: meetConstraint:true
+2019-03-13T10:25:39.594+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.594+00:00 [Info] 		Index name:sg_syncDocs_x1 0, bucket:main-bucket, defnId:5070926143484941682, instId:14060262344087111746, Partition: 0, new/moved:false
+2019-03-13T10:25:39.594+00:00 [Info] 		Index total memory:35791394 (34.1333M), mem:35791394 (34.1333M), overhead:0 (0), data:35791394 (34.1333M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.594+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.594+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.594+00:00 [Info] 		Index name:sg_access_x1 0, bucket:main-bucket, defnId:9412130430611319344, instId:8625970443409330988, Partition: 0, new/moved:false
+2019-03-13T10:25:39.594+00:00 [Info] 		Index total memory:35791394 (34.1333M), mem:35791394 (34.1333M), overhead:0 (0), data:35791394 (34.1333M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.594+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.594+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.594+00:00 [Info] 		Index name:sg_roleAccess_x1 0, bucket:main-bucket, defnId:15487761953577109451, instId:3174249453258515325, Partition: 0, new/moved:false
+2019-03-13T10:25:39.594+00:00 [Info] 		Index total memory:35791394 (34.1333M), mem:35791394 (34.1333M), overhead:0 (0), data:35791394 (34.1333M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.595+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.595+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.595+00:00 [Info] 		Index name:sg_channels_x1 0, bucket:main-bucket, defnId:1463642697455786761, instId:16319037896255442729, Partition: 0, new/moved:false
+2019-03-13T10:25:39.595+00:00 [Info] 		Index total memory:35791394 (34.1333M), mem:35791394 (34.1333M), overhead:0 (0), data:35791394 (34.1333M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.595+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.595+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.595+00:00 [Info] 		Index name:sg_allDocs_x1 0, bucket:main-bucket, defnId:16489805899542037717, instId:6631298737805620076, Partition: 0, new/moved:false
+2019-03-13T10:25:39.595+00:00 [Info] 		Index total memory:35791394 (34.1333M), mem:35791394 (34.1333M), overhead:0 (0), data:35791394 (34.1333M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.595+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.595+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2019-03-13T10:25:39.595+00:00 [Info] 		Index name:sg_tombstones_x1 0, bucket:main-bucket, defnId:9611986325896916243, instId:14823831561728498033, Partition: 0, new/moved:true
+2019-03-13T10:25:39.596+00:00 [Info] 		Index total memory:35791394 (34.1333M), mem:35791394 (34.1333M), overhead:0 (0), data:35791394 (34.1333M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2019-03-13T10:25:39.596+00:00 [Info] 		Index resident:100% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2019-03-13T10:25:39.596+00:00 [Info] ****************************************
+2019-03-13T10:25:39.596+00:00 [Info] send commit create request to watcher 127.0.0.1:9100
+2019-03-13T10:25:39.721+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:39.721+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:39.725+00:00 [Info] switched currmeta from 16 -> 18 force true 
+2019-03-13T10:25:39.890+00:00 [Info] CreateIndex 9611986325896916243 main-bucket/sg_tombstones_x1 using:GSI exprType:N1QL whereExpr:<ud>()</ud> secExprs:<ud>([(((meta().`xattrs`).`_sync`).`tombstoned_at`)])</ud> desc:[false] isPrimary:false scheme:SINGLE  partitionKeys:<ud>([])</ud> with:{"defer_build":true,"retain_deleted_xattr":true} - elapsed(554.6677ms) err(<nil>)
+2019-03-13T10:25:39.890+00:00 [Info] metadata provider version changed 18 -> 19
+2019-03-13T10:25:39.890+00:00 [Info] switched currmeta from 18 -> 19 force false 
+2019-03-13T10:25:39.971+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:39.971+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:39.977+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:39.983+00:00 [Info] switched currmeta from 19 -> 19 force true 
+2019-03-13T10:25:40.138+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:40.138+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:40.142+00:00 [Info] switched currmeta from 19 -> 23 force true 
+2019-03-13T10:25:40.188+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:40.188+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:40.193+00:00 [Info] switched currmeta from 23 -> 25 force true 
+2019-03-13T10:25:40.224+00:00 [Info] BuildIndexes [16489805899542037717 9412130430611319344 1463642697455786761 9611986325896916243 15487761953577109451 5070926143484941682] - elapsed(243.1754ms), err(<nil>)
+2019-03-13T10:25:40.256+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:40.256+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:40.262+00:00 [Info] switched currmeta from 25 -> 25 force true 
+2019-03-13T10:25:40.311+00:00 [Info] metadata provider version changed 25 -> 27
+2019-03-13T10:25:40.312+00:00 [Info] switched currmeta from 25 -> 27 force false 
+2019-03-13T10:25:40.337+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:40.338+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:40.343+00:00 [Info] switched currmeta from 27 -> 28 force true 
+2019-03-13T10:25:40.394+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:40.394+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:40.399+00:00 [Info] switched currmeta from 28 -> 31 force true 
+2019-03-13T10:25:40.454+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:40.454+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:40.463+00:00 [Info] switched currmeta from 31 -> 31 force true 
+2019-03-13T10:25:40.497+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:40.497+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:40.657+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2019-03-13T10:25:40.782+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:40.782+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:40.800+00:00 [Info] switched currmeta from 31 -> 31 force true 
+2019-03-13T10:25:44.851+00:00 [Info] Rollback time has changed for index inst 16319037896255442729. New rollback time 1552472737127365600
+2019-03-13T10:25:44.851+00:00 [Info] Rollback time has changed for index inst 6631298737805620076. New rollback time 1552472737127365600
+2019-03-13T10:25:44.851+00:00 [Info] Rollback time has changed for index inst 2301029472104549806. New rollback time 1552472737127365600
+2019-03-13T10:25:44.851+00:00 [Info] Rollback time has changed for index inst 14060262344087111746. New rollback time 1552472737127365600
+2019-03-13T10:25:44.851+00:00 [Info] Rollback time has changed for index inst 8625970443409330988. New rollback time 1552472737127365600
+2019-03-13T10:25:44.851+00:00 [Info] Rollback time has changed for index inst 3174249453258515325. New rollback time 1552472737127365600
+2019-03-13T10:25:45.620+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:45.621+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:45.651+00:00 [Info] switched currmeta from 31 -> 34 force true 
+2019-03-13T10:25:45.861+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:45.861+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:45.884+00:00 [Info] switched currmeta from 34 -> 36 force true 
+2019-03-13T10:25:45.994+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2019-03-13T10:25:46.058+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:46.058+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:46.076+00:00 [Info] switched currmeta from 36 -> 37 force true 
+2019-03-13T10:25:46.198+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:46.199+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:46.199+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:46.205+00:00 [Info] switched currmeta from 37 -> 37 force true 
+2019-03-13T10:25:46.218+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:46.234+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:46.234+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:46.290+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2019-03-13T10:25:46.290+00:00 [Info] Refreshed Indexer List: [127.0.0.1:9100]
+2019-03-13T10:25:46.297+00:00 [Info] switched currmeta from 37 -> 37 force true 
+2019-03-13T10:25:48.067+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:48.069+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:48.070+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:48.090+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:48.090+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:48.100+00:00 [WARN] Finalizing a bucket with active connections. 
+2019-03-13T10:25:48.103+00:00 [Info] [Queryport-connpool:127.0.0.1:9101] open new connection ...
+2019-03-13T10:25:48.102+00:00 [Info] [Queryport-connpool:127.0.0.1:9101] open new connection ...
+2019-03-13T10:26:36.544+00:00 [Info] connected with 1 indexers
+2019-03-13T10:26:36.544+00:00 [Info] index 5070926143484941682 has replicas [14060262344087111746]: 
+2019-03-13T10:26:36.544+00:00 [Info] index 9412130430611319344 has replicas [8625970443409330988]: 
+2019-03-13T10:26:36.544+00:00 [Info] index 15487761953577109451 has replicas [3174249453258515325]: 
+2019-03-13T10:26:36.544+00:00 [Info] index 1463642697455786761 has replicas [16319037896255442729]: 
+2019-03-13T10:26:36.544+00:00 [Info] index 16489805899542037717 has replicas [6631298737805620076]: 
+2019-03-13T10:26:36.547+00:00 [Info] index 9611986325896916243 has replicas [2301029472104549806]: 
+2019-03-13T10:26:36.547+00:00 [Info] index 16489805899542037717 has equivalents [16489805899542037717]: 
+2019-03-13T10:26:36.547+00:00 [Info] index 9611986325896916243 has equivalents [9611986325896916243]: 
+2019-03-13T10:26:36.547+00:00 [Info] index 5070926143484941682 has equivalents [5070926143484941682]: 
+2019-03-13T10:26:36.547+00:00 [Info] index 9412130430611319344 has equivalents [9412130430611319344]: 
+2019-03-13T10:26:36.547+00:00 [Info] index 15487761953577109451 has equivalents [15487761953577109451]: 
+2019-03-13T10:26:36.547+00:00 [Info] index 1463642697455786761 has equivalents [1463642697455786761]: 
+2019-03-13T10:26:36.547+00:00 [Info] client load stats {"14060262344087111746": 0,"8625970443409330988": 1.08804e+07,"3174249453258515325": 4.6397e+06,"16319037896255442729": 1.10042e+07,"6631298737805620076": 0,"2301029472104549806": 0}
+2019-03-13T10:26:36.547+00:00 [Info] client hit stats {"14060262344087111746": 0,"8625970443409330988": 1,"3174249453258515325": 1,"16319037896255442729": 1,"6631298737805620076": 0,"2301029472104549806": 0}
+2019-03-13T10:26:36.547+00:00 [Info] client pending item stats {"8625970443409330988": 9223372036854775807,"3174249453258515325": 9223372036854775807,"16319037896255442729": 9223372036854775807,"6631298737805620076": 9223372036854775807,"2301029472104549806": 9223372036854775807,"14060262344087111746": 9223372036854775807}
+2019-03-13T10:26:36.547+00:00 [Info] client stats current {"2301029472104549806": true,"14060262344087111746": true,"8625970443409330988": true,"3174249453258515325": true,"16319037896255442729": true,"6631298737805620076": true}
+2019-03-13T10:26:36.554+00:00 [Info] num concurrent scans {0}
+2019-03-13T10:26:36.555+00:00 [Info] average scan response {17 ms}
+2019-03-13T10:26:36.555+00:00 [Info] GSIC[default/main-bucket-1552472736467051900] logstats "main-bucket" {"gsi_scan_count":3,"gsi_scan_duration":54271200,"gsi_throttle_duration":0,"gsi_prime_duration":52620800,"gsi_blocked_duration":0,"gsi_totalbackfills":0}
+2019-03-13T10:26:36.609+00:00 [Info] [Queryport-connpool:127.0.0.1:9101] active conns 0, free conns 3

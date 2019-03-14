@@ -1,0 +1,23 @@
+{
+  "adminInterface":":4985",
+  "interface":":4984",
+  "log": ["CRUD", "REST+", "Access", "sync", "Changes+"],
+  "databases": {
+    "main-bucket": {
+      "import_docs": "continuous",
+      "unsupported": {
+        "enable_extended_attributes": true
+      },
+      "num_index_replicas": 0,
+      "bucket":"main-bucket",
+      "server": "http://server:8091",
+      "enable_shared_bucket_access":true,
+      "username": "dbuser",
+      "password": "password",
+      "sync": "function(doc) { return channel(doc.host_id); }",
+      "users":{
+        "GUEST": {"disabled": false, "admin_channels": ["*"] }
+      }
+    }
+  }
+} 

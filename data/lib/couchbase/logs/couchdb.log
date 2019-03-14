@@ -1,0 +1,9 @@
+[couchdb:info,2019-03-13T10:24:48.967Z,couchdb_ns_1@127.0.0.1:cb_couch_sup<0.104.0>:couch_log:info:41]Apache CouchDB has started on http://0.0.0.0:8092/
+[couchdb:info,2019-03-13T10:24:55.521Z,couchdb_ns_1@127.0.0.1:<0.264.0>:couch_log:info:41]Deleting couch file "/opt/couchbase/var/lib/couchbase/data/main-bucket/master.couch.1.compact" with renaming it to "/opt/couchbase/var/lib/couchbase/data/.delete/bf3aff4d37fccac0e021f9187fce1c53"
+[couchdb:info,2019-03-13T10:24:55.533Z,couchdb_ns_1@127.0.0.1:<0.264.0>:couch_log:info:41]Deleting couch file "/opt/couchbase/var/lib/couchbase/data/main-bucket/master.couch.1.compact" with renaming it to "/opt/couchbase/var/lib/couchbase/data/.delete/1a211dfbaa98d3a59c6f46ad2506c15e"
+[couchdb:info,2019-03-13T10:24:55.568Z,couchdb_ns_1@127.0.0.1:couch_view<0.181.0>:couch_log:info:41]Deleting couch file "/opt/couchbase/var/lib/couchbase/data/.main-bucket/master_temp" with renaming it to "/opt/couchbase/var/lib/couchbase/data/.delete/5f6c21a4300a071c13a2b5dc5c0c42e0"
+[couchdb:info,2019-03-13T10:24:55.572Z,couchdb_ns_1@127.0.0.1:couch_view<0.181.0>:couch_log:info:41]Deleting couch file "/opt/couchbase/var/lib/couchbase/data/.main-bucket/master_temp" with renaming it to "/opt/couchbase/var/lib/couchbase/data/.delete/98ebb5631814224f0b6dfb3d8c5f25ce"
+[couchdb:info,2019-03-13T10:25:48.349Z,couchdb_ns_1@127.0.0.1:couch_query_logger<0.154.0>:couch_log:info:41]Query-Volume
+---
+[couchdb:info,2019-03-13T10:26:48.345Z,couchdb_ns_1@127.0.0.1:couch_query_logger<0.154.0>:couch_log:info:41]Query-Volume
+---
