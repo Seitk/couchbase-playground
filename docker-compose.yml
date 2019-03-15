@@ -27,3 +27,15 @@ services:
         build:
           context: ./client-ws
         container_name: cb-client-ws
+        entrypoint: ["/wait-for.sh"]
+        command: ["node", "app.js"]
+    kafka-connect:
+        build:
+          context: ./kafka-connect
+          args:
+            - CONNECT_BOOTSTRAP_SERVERS=
+            - CONNECT_API_KEY=
+            - CONNECT_API_SECRET=
+        entrypoint: ["/wait-for.sh"]
+        command: ["connect-standalone", "cluster.properties", "couchbase-source.properties", "couchbase-sink.properties"]
+        container_name: cb-kafka-connect

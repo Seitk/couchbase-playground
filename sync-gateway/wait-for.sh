@@ -6,7 +6,7 @@ sync_gateway_config_template_file_path="${sync_gateway_config_file_path}.templat
 couchbase_server_url=`cat $sync_gateway_config_file_path | grep '"server":' | grep -o '"http://.*"' | sed 's/"//g'`
 
 while ! { curl -X GET -u admin:password http://server:8091/pools/default/buckets -H "accept: application/json" -s | grep -q '"status":"healthy"'; }; do
-  echo "sync gateway is waiting for couchbase to be ready..."
+  echo "is waiting for couchbase to be ready..."
   sleep 10
 done
 
