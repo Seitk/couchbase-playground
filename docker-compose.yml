@@ -1,41 +1,48 @@
 version: '3'
 services:
-    server:
-        build:
-          context: ./server
-        container_name: cb-server
-        ports:
-            - "8091-8094:8091-8094"
-        environment:
-            - CB_REST_PASSWORD=password
-        volumes:
-            - ./data:/opt/couchbase/var
-    sync-gateway:
-        build:
-          context: ./sync-gateway
-        container_name: cb-sync-gateway
-        ports:
-            - "4984-4985:4984-4985"
-        environment:
-            - COUCHBASE_BUCKET=main-bucket
-            - COUCHBASE_RBAC_USERNAME=dbuser
-            - COUCHBASE_RBAC_PASSWORD=password
-        entrypoint: ["/wait-for.sh"]
-        depends_on:
-            - server
-    client-ws:
-        build:
-          context: ./client-ws
-        container_name: cb-client-ws
-        entrypoint: ["/wait-for.sh"]
-        command: ["node", "app.js"]
-    kafka-connect:
-        build:
-          context: ./kafka-connect
-          args:
-            - CONNECT_BOOTSTRAP_SERVERS=
-            - CONNECT_API_KEY=
-            - CONNECT_API_SECRET=
-        entrypoint: ["/wait-for.sh"]
-        command: ["connect-standalone", "cluster.properties", "couchbase-source.properties", "couchbase-sink.properties"]
-        container_name: cb-kafka-connect
+  server:
+    build:
+      context: ./server
+    container_name: cb-server
+    ports:
+      - "8091-8094:8091-8094"
+    environment:
+      - CB_REST_PASSWORD=password
+    volumes:
+      - ./data:/opt/couchbase/var
+  # sync-gateway:
+  #   build:
+  #     context: ./sync-gateway
+  #   container_name: cb-sync-gateway
+  #   ports:
+  #     - "4984-4985:4984-4985"
+  #   environment:
+  #     - COUCHBASE_BUCKET=main-bucket
+  #     - COUCHBASE_RBAC_USERNAME=dbuser
+  #     - COUCHBASE_RBAC_PASSWORD=password
+  #   entrypoint: ["/wait-for.sh"]
+  #   depends_on:
+  #     - server
+  # client-ws:
+  #   build:
+  #     context: ./client-ws
+  #   container_name: cb-client-ws
+  #   entrypoint: ["/wait-for.sh"]
+  #   command: ["node", "app.js"]
+  kafka-connect:
+    build:
+      context: ./kafka-connect
+      args:
+        - CONNECT_BOOTSTRAP_SERVERS=
+        - CONNECT_API_KEY=
+        - CONNECT_API_SECRET=
+    entrypoint: ["/wait-for.sh"]
+    command: ["connect-standalone", "cluster.properties", "couchbase-source.properties", "couchbase-sink.properties"]
+    container_name: cb-kafka-connect
+  worker:
+    build:
+      context: ./worker
+    container_name: cb-worker
+    command: tail -f /dev/null
+    volumes:
+      - ./worker:/src
